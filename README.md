@@ -3,7 +3,9 @@ This is a demo application to teach about kubernetes objects. This will deploy a
 1) Install docker
 
 Windows https://docs.docker.com/docker-for-windows/install/
+
 Mac https://docs.docker.com/docker-for-mac/install/
+
 Linux https://docs.docker.com/engine/install/
 
 ```
