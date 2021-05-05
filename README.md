@@ -34,18 +34,18 @@ $ skaffold version
 v1.23.0
 ```
 
-4) Install kubectl
+4) Start minikube
+```
+$ minikube start --cpus=2 --memory=2048M --driver=docker
+```
+
+5) Install kubectl
 
 Follow instructions at http://pwittrock.github.io/docs/tasks/tools/install-kubectl/
 
 ```
 $ kubectl version
 Client Version: version.Info{Major:"1", Minor:"18", GitVersion:"v1.18.1", GitCommit:"7879fc12a63337efff607952a323df90cdc7a335", GitTreeState:"clean", BuildDate:"2020-04-08T17:38:50Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"linux/amd64"}
-```
-
-5) Start minikube
-```
-$ minikube start --cpus=2 --memory=2048M
 ```
 
 6) Make sure kubectl is configured to use minikube.
