@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+build:
+  artifacts:
+  - image: core-harbor.entigo.io/demo/example-api
+    context: API
+  - image: core-harbor.entigo.io/demo/example-web
+    context: web
+    
+deploy:
+  kubectl:
+    manifests:
+      - yaml/*/*
