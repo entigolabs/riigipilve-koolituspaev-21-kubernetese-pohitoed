@@ -71,6 +71,9 @@ $ cd riigipilve-koolituspaev-21-kubernetese-pohitoed
 ```
 $ kubectl apply -f haproxy-ingress-controller.yaml
 $ kubectl get pods -n ingress-controller
+
+NAME                    READY   STATUS    RESTARTS   AGE
+haproxy-ingress-bz4m5   1/1     Running   0          27m
 ```
 
 9) Create a hosts record in your host computer. This will append a line to your /etc/hosts file containing the minikube vm IP and  demo.entigo.io host.
@@ -78,11 +81,15 @@ $ kubectl get pods -n ingress-controller
 $ echo "$(minikube ip) demo.entigo.io" | sudo tee -a /etc/hosts 
 ```
 
-10) Start skaffold. It will build and deploy the application.
+10) Start skaffold.
+
+It will build and deploy the application.
 This command will remain running. While it is running you can make changes to any part of the project and it will apply those changes immediately. 
 You will also see the applications logs in the terminal.
 ```
 $ skaffold dev
 ```
 
+
 11) Point your browser to http://demo.entigo.io and start making changes to the code!
+You might need to wait for skaffold to build and deploy everything before it start working.
