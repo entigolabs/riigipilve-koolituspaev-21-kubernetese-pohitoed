@@ -1,7 +1,7 @@
- 
+This is a demo application to teach about kubernetes objects. This will deploy a  frontend with static html and javascript that uses an API in the backend. The API uses Redis to store state.
 
 
-1)Install minikube 
+1) Install minikube 
 
 https://minikube.sigs.k8s.io/docs/start/
 
