@@ -3,7 +3,7 @@ This is a demo application to teach about kubernetes objects. This will deploy a
 
 1) Install minikube 
 
-https://minikube.sigs.k8s.io/docs/start/
+Follow instructions at https://minikube.sigs.k8s.io/docs/start/
 
 ```
 $ minikube version
@@ -12,7 +12,8 @@ commit: 15cede53bdc5fe242228853e737333b09d4336b5
 ```
 
 2) Install skaffold
-https://skaffold.dev/docs/install/
+
+Follow instructions at https://skaffold.dev/docs/install/
 
 ```
 $ skaffold version
@@ -20,7 +21,8 @@ v1.23.0
 ```
 
 3) Install kubectl
-http://pwittrock.github.io/docs/tasks/tools/install-kubectl/
+
+Follow instructions at http://pwittrock.github.io/docs/tasks/tools/install-kubectl/
 
 ```
 $ kubectl version
