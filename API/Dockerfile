@@ -1,5 +1,5 @@
 #Kasutame node 16
-FROM node:16
+FROM node:16-slim
 #Määrame töötamise kausta
 WORKDIR /app
 #Määrame vaike väärtuse
