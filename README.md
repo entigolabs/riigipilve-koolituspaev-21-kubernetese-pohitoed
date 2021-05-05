@@ -2,6 +2,17 @@ This is a demo application to teach about kubernetes objects. This will deploy a
 
 1) Install docker
 
+Windows https://docs.docker.com/docker-for-windows/install/
+Mac https://docs.docker.com/docker-for-mac/install/
+Linux https://docs.docker.com/engine/install/
+
+```
+$ docker version
+...
+ Version:           20.10.3
+...
+```
+
 2) Install minikube 
 
 Follow instructions at https://minikube.sigs.k8s.io/docs/start/
@@ -72,4 +83,4 @@ You will also see the applications logs in the terminal.
 $ skaffold dev
 ```
 
-11) Point your browser to demo.entigo.io and start making changes to the code!
+11) Point your browser to http://demo.entigo.io and start making changes to the code!

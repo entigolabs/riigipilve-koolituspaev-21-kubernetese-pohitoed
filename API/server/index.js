@@ -23,6 +23,7 @@ const redisClient = redis.createClient({
 
 redisClient.on('error', function (err) {
     console.log('Could not establish a connection with redis. ' + err);
+    process.exit(1)
 });
 redisClient.on('connect', function (err) {
     console.log('Connected to redis successfully');
@@ -47,6 +48,7 @@ app.get("/api", (req, res) => {
   } else {
     sess.counter = 1
   }
+  console.log(`Serving /api call from ${process.env.POD_NAME}, this client has visited us ${sess.counter} times!`);
   res.json({ message: `Hello from ${process.env.POD_NAME}! You have visited us ${sess.counter} times!` });
 });
 

@@ -14,6 +14,8 @@ spec:
       labels:
         app: api
     spec:
+      terminationGracePeriodSeconds: 3
+      restartPolicy: Always
       containers:
       - name: api
         image: core-harbor.entigo.io/demo/example-api:latest
@@ -23,5 +25,10 @@ spec:
             name: api
         - secretRef:
             name: api
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         ports:
         - containerPort: 3001

@@ -5,7 +5,7 @@ WORKDIR /app
 #Pane kood /app kausta
 COPY . /app
 #Ehitame HTML
-RUN npm run build          
+RUN npm install && npm run build          
 #Kasutame nginxi
 FROM nginx                 
 #Kopeerime eelmises konteineris ehitatud HTMLi
